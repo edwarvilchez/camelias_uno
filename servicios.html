@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Servicios</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css" media="all">
+	<link rel="stylesheet" href="css/camelias.css" media="screen">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="">
+
+	<style>
+		/*Clearfix*/
+		.clear:before, .clear:after{
+			content: " ";
+			display: table;
+		}
+
+		.clear:after{
+			clear: both;
+		}
+
+		.clear{
+			*zoom: 1;
+		}
+
+		a#pull{
+			display: none;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+<script>
+$(function() {
+    var pull = $('#pull');
+    menu = $('nav ul');
+    menuHeight = menu.height();
+
+    $(pull).on('click', function(e) {
+        
+e.preventDefault();
+        menu.slideToggle();
+    });
+});
+
+$(window).resize(function(){
+    var w = $(window).width();
+    if(w > 320 && menu.is(':hidden')) {
+        
+menu.removeAttr('style');
+    }
+});
+
+</script>
+</head>
+<body>
+
+	<div id="container">
+		<header>
+			<a href="index.html"><img src="imgs/logo.gif" width="293" height="144" alt=""></a>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="instalaciones.html">Instalaciones</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="actividades.html">Actividades</a></li>
+				<li><a href="secretaria.html">Contactos</a></li>
+				<br style="clear:both;">
+			</ul>
+
+			<a id="pull" href="#">Menú</a>
+		</nav>
+<!--cierre del nav-->
+
+<hr class="split">
+
+<h3 class="temas">
+	Nuestros Servicios
+</h3>
+
+<!--volver a inicio-->
+<div class="ir">
+	<a href="index.html">
+		<img src="imgs/home.png" alt="">
+	</a>
+</div>
+<!--cierre de volver a inicio-->
+
+<br><br>
+
+<!--lista de servicio-->
+<div>
+	<ul style="list-style:none;">
+		<li>Alojamiento</li>
+		<li>Pensión (4 Comidas Balanceadas por una Nutricionista</li>
+		<li>Atención Médica</li>
+		<li>Atención Médica diaría por Médico Geriatra</li>
+		<li>Cobertura de Emergencia Médica Área Protegida las 24 horas</li>
+		<li>Asistente y Auxiliares de Enfermería las 24 horas</li>
+		<li>Lavado de Ropa</li>
+		<li>Terapia Ocupacional</li>
+		<li>Rehabilitación</li>
+		<li>Atención Médica por Empresa Reconocida</li>
+	</ul>
+</div>
+<!--cierre lista de servicio-->
+
+<hr class="split">
+
+<!--galeria-->
+<h3 class="galeria"><span class="puntero">&#9658;</span>Galeria de Imagenes</h3>
+
+<div id="galeria">
+	<div class="primera">
+		<a href="" class="flipLigthBox">
+			<img src="imgs/DSCN1184.jpg" width="225" height="169" alt="Servicios">
+		</a>
+	</div>
+
+	<div class="segunda">
+		<a href="" class="flipLigthBox">
+			<img src="imgs/DSCN1192.jpg" width="225" height="169" alt="Servicios">
+		</a>
+	</div>
+
+	<div class="tercera">
+		<a href="" class="flipLigthBox">
+			<img src="imgs/geriatrico_camelias_6.jpg" width="225" height="169" alt="Servicios">
+		</a>
+	</div>
+
+	<div class="tercera">
+		<a href="" class="flipLigthBox">
+			<img src="imgs/geriatrico_camelias_5.jpg" width="225" height="169" alt="Servicios">
+		</a>
+	</div>
+
+	<div class="tercera">
+		<a href="" class="flipLigthBox">
+			<img src="imgs/geriatrico_camelias_13.jpg" width="225" height="169" alt="Amplio Comedor">
+		</a>
+	</div>
+
+	<div class="tercera">
+		<a href="" class="flipLigthBox">
+			<img src="imgs/geriatrico_camelias_12.jpg" width="225" height="169" alt="Amplio Comedor">
+		</a>
+	</div>
+</div>
+
+<div class="volver">
+	<a href="index.html" class="volver">Volver a Inicio &raquo;</a>
+</div>
+
+
+
+<!--feedback-->
+<div id="footer-prev">
+	<div id="footer">
+		<div class="left">
+			<h4>Feedback</h4>
+			Consultas: : 4245 0063<br>
+			Visítenos: Esmeralda 885, esq. Carlos Tejedor. Temperley - Buenos Aires<br>
+			Solicitud de Información: <a href="mailto:info@geriatricodelascamelias.com.ar">info@geriatricodelascamelias.com.ar</a>
+		</div>
+
+		<div class="center">
+			<h4 class="footer">Geriatrico Las Camelias</h4>
+			<ul class="center">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="instalaciones.html">Instalaciones</a></li>
+				<li><a href="servicios.html">Servcios</a></li>
+				<li><a href="actividades.html">Actividades</a></li>
+				<li><a href="contactos.html">Contactos</a></li>
+			</ul>
+</div>
+	</div>
+</div>
+
+<div class="right"></div>
+<!--cierre de feedback-->
+
+<footer>
+	<img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" ><br >
+	Esta obra está bajo una Licencia Creative Commons Atribución-NoComercial-SinDerivar 4.0 Internacional<br>
+	Basada en una obra en http://www.geriatricolascamelias.com.ar
+
+</footer>
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider ({
+        effect: 'fade'});
+    });
+    </script>
+            
+
+</div><!-- #container -->  
+</body>
+
+</html>
